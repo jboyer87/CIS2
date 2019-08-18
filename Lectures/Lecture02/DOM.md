@@ -6,5 +6,9 @@ html
 		title
 		link
 	body
-		br
+		h1
+		p
+			b
+				i
+			u
 
