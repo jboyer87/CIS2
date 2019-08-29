@@ -1,0 +1,56 @@
+h1, h2, h3, h4, h5, h6 {
+	color: #4e14b3;
+	color: rgb(78, 20, 179);
+	/* color: rgba(78, 20, 179, .5); */
+	font-family: monospace, "Comic Sans", "Times New Roman";
+	text-shadow: 4px 4px 0 rgba(255, 0, 0, .5);
+}
+
+.less-important {
+	color: rgba(78, 20, 179, .5);
+}
+
+#actually-important {
+	color: gold;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+h2 {
+	font-size: 2.5rem;
+}
+
+h3 {
+	font-size: 2rem;
+}
+
+body {
+	font-size: 16px;
+}
+
+body > p {
+	color: orange;
+}
+
+table {
+	border: 1px solid black;
+}
+
+tr:hover {
+	background-color: grey;
+}
+
+
+a:link, a:visited {
+	color: blue;
+}
+
+
+
+a:hover, a:focus {
+	color: green;
+}
+
+
