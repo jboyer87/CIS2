@@ -1,0 +1,89 @@
+/* Chapter 7 */
+/* 
+What I have below is the basic building blocks for simple page navigation styling.
+*/
+
+body {
+	font-size: 16px; /* Base font size that the other sizes are relative to */
+}
+
+/* Navigation */
+nav ul li {
+	border: 2px solid purple;
+	display: inline; /* This makes the navigation list items display NEXT TO each other */
+}
+
+nav ul li:hover {
+	border: 2px solid green;
+}
+
+nav ul li a {
+	color: purple;
+	font-size: 1.5em;
+	text-decoration: none;
+	padding: 1em;
+}
+
+nav ul li a:hover, 
+nav ul li a:focus {
+	color: green;
+}
+
+/* List with an image */
+
+ul.star li {
+	list-style-image: url("star.jpeg"); /* Swaps the regular bullet for an image (star.jpeg) */
+}
+
+/* Chapter 11 */
+
+/* 
+This will be useful for assignment #4. You will need to float an image to the left and 
+have your text flow to the right of it as in the example.
+*/
+
+.clear-left {
+	clear: left;
+}
+
+.display-block {
+	display: block;
+}
+
+.divider {
+	height: auto;
+	width: 100%;
+}
+
+figure {
+	float: left;
+	text-align: center;
+}
+
+/* Chapter 12 */
+
+/* 
+Using the thead, tfoot, and tbody elements makes it easier to style each section with 
+CSS. This is the primary reason for each of these table sections.
+*/
+
+table {
+	border-collapse: collapse; /* This gets rid of the space between borders on a table */
+}
+
+tfoot td {
+	color: blue;
+	font-weight: bold;
+}
+
+td, th {
+	border: 1px solid black;
+	padding: .5em; /* This adds a bit of spacing for each of the cells */
+	text-align: center;
+}
+
+thead th {
+	color: red;
+	font-weight: bold;
+	text-decoration: underline;
+}
