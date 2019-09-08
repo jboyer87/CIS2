@@ -1,0 +1,188 @@
+a:link, a:visited {
+	color: #7A0D05;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:focus, a:hover {
+	color: #9A2D25;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+body {
+	background-attachment: fixed;
+	background-image: url("images/fight-club-background.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-left: 3em;
+	margin-right: 20em;;
+}
+
+figcaption {
+	color: #566D58;
+	font-size: .8em;
+	font-style: italic;
+	text-align: center;
+}
+
+footer {
+	clear: both;
+}
+
+h1, h2, h3 {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	text-transform: uppercase;
+	text-shadow: #7A0D05 2px 2px 4px;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+li {
+	line-height: 1.75em;
+}
+
+main {
+	float: left;
+	max-width: 60%;
+}
+
+main.full-width {
+	float: none;
+	max-width: 100%;
+}
+
+nav ul li {
+	display: inline;
+	padding: .5em;
+}
+
+nav ul li:hover {
+	border-bottom: 2px solid #9A2D25;
+	border-top: 2px solid #9A2D25;
+}
+
+nav ul li.current:hover {
+	border-bottom: 2px solid #566D58;
+	border-top: 2px solid #566D58;
+}
+
+nav ul li a {
+	display: inline-block;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+nav ul li.current a {
+	color: #566D58;
+}
+
+nav ul li a:hover, 
+nav ul li a:focus {
+	text-decoration: none;
+}
+
+p {
+	line-height: 1.75em;
+	text-indent: 4em;
+}
+
+q {
+	color: #566D58;
+	font-size: 1.25em;
+	font-style: italic;
+	line-height: 1.75em;
+}
+
+q:hover {
+	color: #7A0D05;
+	text-decoration: underline;
+}
+
+table {
+	margin: 2em;
+	border-collapse: collapse;
+	width: 75%;
+}
+
+table td,
+table th {
+	border: 1px solid black;
+	padding: .5em;
+}
+
+table tr:nth-child(even) {
+	background-color: rgba(122, 13, 5, .2);
+}
+
+table tr:nth-child(odd) {
+	background-color: rgba(86, 109, 88, .2);
+}
+
+table thead tr:first-child {
+	background-color: rgba(0, 0, 0, .2);
+}
+
+.film-adaptation-note {
+	font-style: italic;
+	font-size: .8em;
+}
+
+.no-indent {
+	text-indent: 0;
+}
+
+.quote-wrapper {
+	text-align: center;
+}
+
+#citations {
+	border: 2px solid #566D58;
+}
+
+#citations h2 {
+	color: #000000;
+}
+
+#copyright, #citations {
+	color: #566D58;
+	font-size: .8em;
+	padding: 1em;
+}
+
+#copyright {
+	text-align: center;
+}
+
+#intro p {
+	color: #566D58;
+	font-style: italic;
+	font-size: 1.25em;
+	text-indent: 0;
+}
+
+#photo,
+#popular-works-photo {
+	float: left;
+	max-width: 25%;
+}
+
+#photo img,
+#popular-works-photo img
+{
+	border: 2px dotted #566D58;
+	max-width: 100%;
+}
+
