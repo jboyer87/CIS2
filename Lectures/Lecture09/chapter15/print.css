@@ -1,0 +1,20 @@
+/* 	
+	This is the print stylesheet that overrides everything that we did in the main.css 
+	stylesheet that wouldn't look good when printed on a piece of paper 
+*/
+
+body {
+	background-color: white;
+	color: black;
+}
+
+h1, h2 {
+	border: 2px dotted black;
+	color: black;
+	page-break-after: avoid; /* Avoids a page break after the header whenever possible */
+	page-break-before: always; /* Creates a page break before the header ALWAYS */
+}
+
+.intro {
+	color: black;
+}

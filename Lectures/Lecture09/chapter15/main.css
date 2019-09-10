@@ -1,0 +1,34 @@
+/*
+	Copied from Google web fonts and pasted here as a comment. Now I can quickly 
+	copy/paste these elsewhere in my CSS file instead of having to hunt through the rest 
+	of the file to find them.
+
+	font-family: 'Roboto Slab', serif;
+	font-family: 'Oswald', sans-serif;
+*/
+
+body {
+	background-color: orange;
+	color: limegreen;
+	font-family: 'Roboto Slab', serif; /* Uses the first imported font from Google Web Fonts */
+	font-size: 16px;
+}
+
+h1, h2 {
+	border-bottom: 2em red dotted;
+	font-family: 'Oswald', sans-serif; /* Uses the second imported font from Google Web Fonts */
+}
+
+h1 {
+	font-size: 2.5em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+.intro {
+	color: purple;
+	font-size: 1.25em;
+	font-weight: bold;
+}

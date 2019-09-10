@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Lecture 9</title>
+</head>
+<body>
+	<h1>Hello World!</h1>
+	<p>In this part of the demo, we created a simple form with different input types. We did some basic validation on our form fields using HTML client-side validation. We demonstrated the usage of a submit and clear buttons and sent our form data to a "process-form.html" page.</p>
+
+	<form action="process-form.html" method="GET">
+		<label for="first-name">First name</label>
+		<input type="text" name="first-name" id="first-name" placeholder="IE. Joshua" required>
+		<br>
+		<label for="last-name">Last name</label>
+		<input type="text" name="last-name" id="last-name" placeholder="IE. Warbritton" required>
+		<br>
+		<label for="password">Password</label>
+		<input type="password" name="password" id="password" required>
+		<br>
+		<label for="email-address">Email address</label>
+		<input type="email" name="email-address" id="email-address" placeholder="realemail@real.com" required>
+		<br>
+		<label for="hidden">Hidden</label>
+		<input type="hidden" name="hidden" value="123">
+		<br>
+		<label for="comments">Comments</label>
+		<br>
+		<textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+		<br>
+		<input type="submit" value="Submit">
+		<input type="reset" value="CLEAR ALL OF YOUR DATA DON'T PRESS ME">
+	</form>
+
+</body>
+</html>
