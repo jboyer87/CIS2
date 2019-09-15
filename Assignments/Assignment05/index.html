@@ -1,12 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Assignment 05 | CIS2</title>
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa|Indie+Flower|Neucha&display=swap" rel="stylesheet">
+	<!-- Google Web Fonts -->
+	<link rel="stylesheet" href="main.css">
+	<script src="https://kit.fontawesome.com/d9dae0e9af.js"></script> <!-- FontAwesome code -->
 </head>
+
 <body>
-	
+	<header>
+		<h1 id="page-title">Turnip the Beet</h1>
+		<div class="slogan">Fresh, Creative, Casual</div>
+		<p>Welcome to Turnip the Beet's online ordering form! <em>Kale</em> me crazy but we think we have some of the
+			best food in the biz. <em>Lettuce</em> be frank - we don't serve any meat products here but we're kind of a
+			big <em>dill</em> in the restaurant scene. Alright, don't <em>leaf</em> us hanging! Place your order below
+			and we'll get right on it!</p>
+	</header>
+	<main>
+		<section id="order-form">
+			<h2>Place your order by filling out the form below</h2>
+			<form action="process-order.html" method="POST">
+				<section id="order-details">
+					<h3>Details</h3>
+					<fieldset>
+						<legend>Order Details</legend>
+
+						<label for="first-name">First Name:</label>
+						<input type="text" name="first-name" id="first-name" placeholder="I.E. Joe" required>
+						<br>
+
+						<label for="last-name">Last Name:</label>
+						<input type="text" name="last-name" id="last-name" placeholder="I.E. Schmoe" required>
+						<br>
+
+						<label for="email-address">Email Address:</label>
+						<input type="email" name="email-address" id="email-address"
+							placeholder="I.E. JoeSchmoe@Schmucks.com" required>
+						<br>
+
+						<p>
+							Dining Preference:<br>
+							<input type="radio" name="dining-preference" id="here" checked>
+							<label for="here">Dine In</label>
+							<input type="radio" name="dining-preference" id="togo">
+							<label for="togo">To-go</label>
+						</p>
+					</fieldset>
+				</section>
+				<section id="food-choice">
+					<h3>Food and Sides</h3>
+					<fieldset>
+						<legend>Food Choices</legend>
+
+						<label for="entree">Choose an entree:</label>
+						<select name="entree" id="entree">
+							<option value="kale-salad">Kale Salad</option>
+							<option value="eggless-egg-salad">Eggless Egg Salad Sandwich</option>
+							<option value="mushroom-burger">Mushroom Burger</option>
+							<option value="veggie-burrito">Veggie Burrito</option>
+						</select>
+
+						<p>Choose your sides:<br>
+							<input type="checkbox" name="side-pasta" id="side-pasta">
+							<label for="side-pasta">Pasta Salad</label><br>
+							<input type="checkbox" name="side-soup" id="side-soup">
+							<label for="side-soup">Soup of the Day</label><br>
+							<input type="checkbox" name="side-potato" id="side-potato">
+							<label for="side-potato">Potato Salad</label><br>
+							<input type="checkbox" name="side-quinoa" id="side-quinoa">
+							<label for="side-quinoa">Quinoa Salad</label>
+						</p>
+					</fieldset>
+
+				</section>
+				<section id="drink-options">
+					<h3>Drinks</h3>
+					<fieldset>
+						<legend>Drink Choices</legend>
+						<label for="drink-choice">Choose a Drink:</label>
+						<select name="drink-choice" id="drink-choice" required>
+							<option value="matcha-green-tea">Matcha Green Tea</option>
+							<option value="carrot-juice">Carrot Juice</option>
+							<option value="iced-tea-green">Iced Tea (Green)</option>
+							<option value="iced-tea-black">Iced Tea (Black)</option>
+						</select>
+						<br>
+						<p>Size:<br>
+							<input type="radio" name="drink-size" id="small">
+							<label for="small">Small (8oz)</label><br>
+							<input type="radio" name="drink-size" id="medium" checked>
+							<label for="medium">Medium (12oz)</label><br>
+							<input type="radio" name="drink-size" id="large">
+							<label for="large">Large (16oz)</label>
+						</p>
+					</fieldset>
+				</section>
+				<section id="special-requests">
+					<h3>Special Requests and Allergy Info</h3>
+					<fieldset>
+						<legend>Special Requests</legend>
+						<textarea name="special" id="special"
+							placeholder="Please tell us about any special requests, food allergy information, etc."></textarea>
+					</fieldset>
+				</section>
+
+				<section id="submit-order">
+					<h3>Place Your Order</h3>
+					<input class="button-primary" type="submit" value="Place Order">
+					<input class="button-warning" type="reset" value="Reset Form">
+				</section>
+			</form>
+		</section>
+
+	</main>
+	<footer>
+		<p id="copyright">Copyright &copy; 2019 Turnip the Beet</p>
+	</footer>
 </body>
+
 </html>
