@@ -1,15 +1,4 @@
-/*
-	colors:
-		purple: #512DA8 / #D1C4E9
-		green: #388E3C / #A5D6A7 / #C8E6C9
-		orange: #F57C00 / #FFE0B2
-		red: #D32F2F / #FFCDD2 / #EF9A9A
-
-	fonts:
-		font-family: "Comfortaa", cursive; 		headings
-		font-family: "Indie Flower", cursive;	emphasis
-		font-family: "Neucha", cursive;			body text
-*/
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Indie+Flower|Neucha&display=swap');
 
 * {
 	margin: 0;

@@ -6,8 +6,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Assignment 05 | CIS2</title>
-	<link href="https://fonts.googleapis.com/css?family=Comfortaa|Indie+Flower|Neucha&display=swap" rel="stylesheet">
-	<!-- Google Web Fonts -->
 	<link rel="stylesheet" href="main.css">
 	<script src="https://kit.fontawesome.com/d9dae0e9af.js"></script> <!-- FontAwesome code -->
 </head>
@@ -58,7 +56,8 @@
 						<legend>Food Choices</legend>
 
 						<label for="entree">Choose an entree:</label>
-						<select name="entree" id="entree">
+						<select name="entree" id="entree" required>
+							<option value="">Click to choose</option>
 							<option value="kale-salad">Kale Salad</option>
 							<option value="eggless-egg-salad">Eggless Egg Salad Sandwich</option>
 							<option value="mushroom-burger">Mushroom Burger</option>
@@ -84,6 +83,7 @@
 						<legend>Drink Choices</legend>
 						<label for="drink-choice">Choose a Drink:</label>
 						<select name="drink-choice" id="drink-choice" required>
+							<option value="">Click to choose</option>
 							<option value="matcha-green-tea">Matcha Green Tea</option>
 							<option value="carrot-juice">Carrot Juice</option>
 							<option value="iced-tea-green">Iced Tea (Green)</option>
