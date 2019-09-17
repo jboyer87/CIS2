@@ -1,0 +1,47 @@
+* {
+	margin: 0; 		/* The space between the BORDER and all OTHER ELEMENTS */
+	padding: 0; 	/* The space between the CONTENT and the BORDER */
+}
+
+html {
+	background: rgb(196,195,222); /* Set a base background color */
+	/* ...then set a gradient (This allows for a fallback in case the visitor's browser does not support gradients */
+	background: linear-gradient(90deg, rgba(196,195,222,1) 0%, rgba(184,184,213,1) 35%, rgba(177,193,214,1) 64%, rgba(165,208,217,1) 100%);
+	/* Generate your gradients with https://cssgradient.io/ */
+}
+
+body {
+	border: 2px double blue;
+	border-radius: 1em 2em 3em 4em; /* Creates rounded corners border for the border */
+	font-family: 'Comic Sans MS', sans-serif;
+	font-size: 14px;
+	margin: 1em;
+	padding: 1em;
+}
+
+#container {
+	border: 2px dashed purple;
+	border-radius: 10px;
+	margin: 1em;
+	padding: 2em;
+}
+
+#content { 
+	border: 2px dotted gold;
+	display: block;
+	margin: 1em;
+	padding: 1em;
+}
+
+button {
+	background: red;
+	border-radius: 50%;
+	border: 2px dashed purple;
+	/* Generate your box shadows with https://cssgenerator.org/box-shadow-css-generator.html */
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	color: white;
+	font-size: 10px;
+	margin: 1em;
+	height: 25px;
+	width: 25px;
+}
