@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Lecture 13 | CIS2</title>
+	<!--
+		We don't really need normalize if we're using Bootstrap
+		Normalize CSS: https://cdnjs.com/libraries/normalize
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous" />-->
+	<!-- Bootstrap CSS: https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- MY CSS is placed AFTER the Bootstrap CSS so that I can override any Bootstrap styles -->
+	<link rel="stylesheet" href="main.css">
+	<!-- FontAwesome's JS library: https://fontawesome.com/ (Note that you must create an account and sign in to use FontAwesome) -->
+	<script src="https://kit.fontawesome.com/d9dae0e9af.js" crossorigin="anonymous"></script>
+	<!-- Animate.JS library: https://github.com/daneden/animate.css -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+</head>
+
+<body>
+	<h1 class="animated infinite bounce delay-2s"><i class="fas fa-robot"></i> Hello World!</h1>
+
+	<h2>Bootstrap Alerts</h2>
+	<div class="alert alert-success" role="alert">
+		This is a success alert—check it out!
+	</div>
+	<div class="alert alert-danger" role="alert">
+		This is a danger alert—check it out!
+	</div>
+	<div class="alert alert-warning" role="alert">
+		This is a warning alert—check it out!
+	</div>
+
+	<h2>Bootstrap Buttons</h2>
+	<button class="btn btn-success"><i class="fas fa-beer"></i> Buy me a Beer!</button>
+
+	<!-- All three of these are needed in this SPECIFIC ORDER to include Bootstrap on your page: https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
