@@ -1,0 +1,18 @@
+/* 2 mixins that add shadows */
+/*	Adds a basic shallow shadow (good for default states) */
+/*	Adds a basic deep shadow (good for hover states) */
+/* Nesting for multiple elements */
+.toast, .alert, button, .btn {
+  opacity: 1 !important;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
+  transition: all .2s ease-in-out; }
+  .toast:hover, .alert:hover, button:hover, .btn:hover {
+    box-shadow: 0 21px 40px 0 rgba(0, 0, 0, 0.05), 0 14px 12px 0 rgba(0, 0, 0, 0.12);
+    transition: all .2s ease-in-out; }
+
+/* Add some space to the bottom of the page */
+body {
+  margin-bottom: 4em; }
+
+h1, h2 {
+  margin: 1rem; }
