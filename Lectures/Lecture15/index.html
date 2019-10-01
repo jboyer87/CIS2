@@ -8,6 +8,58 @@
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<h1>Hello World!</h1>
+	<header>
+		<h1>Hello World!</h1>
+	</header>
+	<main>
+		<section>
+			<h2>Non-text content</h2>
+			<h3>Images</h3>
+			<!-- Images -->
+			<img src="images/punisher.jpg" alt="The Punisher">
+			<h3>Videos</h3>
+			<!-- Video (This is from YouTube, which has automatic closed capitioning, so it's accessible -->
+			<!-- Video can be paused, stopped, or hidden, so it's accessible -->
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/tcRxsFI0Guo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<h3>Sound</h3>
+			<!-- Sound -->
+			<p>This needs to be a word-for-word transcript of the audio from the video.</p>		
+		</section>
+		<section>
+			<h2>Information and Relationships</h2>
+			<!-- Form controls -->
+			<form>
+				<label for="superhero-name">Superhero Name:</label> 
+				<input type="text" id="superhero-name" name="superhero-name" placeholder="The Punisher">
+			</form>
+		</section>
+		<section>
+			<h2>Clear labels and instructions</h2>
+			<form>
+				<!-- Include instructions so that what needs to be done is obvious -->
+				<p>Fill out the location of your secret hideout and press submit.</p>
+				<label for="secret-hideout">Secret Hideout:</label>
+				<!-- This is required and it will alert the user if they do not enter the required information -->
+				<input type="text" name="secret-hideout" id="secret-hideout" required><br>
+
+				<label for="personal-email">Personal Email:</label>
+				<!-- 
+					This is wrong! use the correct input type so that it gives a useful error message and does not allow the user to enter incorrect information.
+					<input type="text" name="personal-email" id="personal-email" required> -->
+				<input type="email" name="personal-email" id="personal-email" required>
+				<button>Submit</button>
+			</form>
+		</section>
+		<section>
+			<h2>Link text must be meaningful</h2>
+			<!--
+				This is wrong! The link text doesn't tell me where the link goes 
+				<a href="mailto:my-personal-email@gmail.com">Click here</a> to email me!-->
+				<a href="mailto:my-personal-email@gmail.com">Email me</a>!
+		</section>
+	</main>
+	<footer>
+		<p>Copyright Blah blah blah &copy; 2019</p>
+	</footer>
 </body>
 </html>
