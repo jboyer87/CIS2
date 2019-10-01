@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Lecture 15 Activity | CIS2</title>
 	<link rel="stylesheet" href="css/main.css">
+	<!-- FontAwesome CDN -->
+	<!-- FontAwesome is an ICON FONT. This means that every icon is technically a 
+		character. FontAwesome does some interesting things to ensure that it plays
+		 nice with screen readers and other assistive devices. Learn more here:
+		https://cdn.fontawesome.com/help#qa-autoa11y	
+	-->
+	<script src="https://kit.fontawesome.com/d9dae0e9af.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 	<header>
 		<h1>Hello World!</h1>
@@ -20,16 +29,18 @@
 			<h3>Videos</h3>
 			<!-- Video (This is from YouTube, which has automatic closed capitioning, so it's accessible -->
 			<!-- Video can be paused, stopped, or hidden, so it's accessible -->
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/tcRxsFI0Guo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/tcRxsFI0Guo" frameborder="0"
+				allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen></iframe>
 			<h3>Sound</h3>
 			<!-- Sound -->
-			<p>This needs to be a word-for-word transcript of the audio from the video.</p>		
+			<p>This needs to be a word-for-word transcript of the audio from the video.</p>
 		</section>
 		<section>
 			<h2>Information and Relationships</h2>
 			<!-- Form controls -->
 			<form>
-				<label for="superhero-name">Superhero Name:</label> 
+				<label for="superhero-name">Superhero Name:</label>
 				<input type="text" id="superhero-name" name="superhero-name" placeholder="The Punisher">
 			</form>
 		</section>
@@ -55,11 +66,27 @@
 			<!--
 				This is wrong! The link text doesn't tell me where the link goes 
 				<a href="mailto:my-personal-email@gmail.com">Click here</a> to email me!-->
-				<a href="mailto:my-personal-email@gmail.com">Email me</a>!
+			<a href="mailto:my-personal-email@gmail.com">Email me</a>!
+		</section>
+		<section>
+			<h2>Icon fonts (try this section with NVDA)</h2>
+			<p>Even though there is no text on the button below, FontAwesome will use the <code>title</code> attribute's value and pass
+				that to the screen reader. This acts almost like an <code>alt</code> tag does for images.</p>
+			<p>This code...</p>
+			<code>
+				&lt;button type="submit"&gt;
+					&lt;i class="fa fa-arrow-right" title="Submit My Tax Return"&gt;&lt;/i&gt;
+				&lt;/button&gt;
+			</code>
+			<p>...turns into this:</p>
+			<button type="submit">
+				<i class="fa fa-arrow-right" title="Submit My Tax Return"></i>
+			</button>
 		</section>
 	</main>
 	<footer>
 		<p>Copyright Blah blah blah &copy; 2019</p>
 	</footer>
 </body>
+
 </html>
